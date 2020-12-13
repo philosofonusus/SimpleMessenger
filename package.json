@@ -1,0 +1,23 @@
+{
+  "name": "textmessanger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "serve": "nodemon server.js",
+    "start": "concurrently \"npm run serve\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC"
+}
